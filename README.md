@@ -1,6 +1,6 @@
 # Projeto-Semestral-Site-Nullscape
 
-Projeto escolar feito para fins de aprendizado feito por:
+Projeto escolar feito para fins de aprendizado produzido por:
 Victor Moreira Marques de Araujo,
 Aquiles da Silva Raimundo
 
