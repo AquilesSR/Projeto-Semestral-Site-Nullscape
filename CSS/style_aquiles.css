@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Kings&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Smooch+Sans:wght@100..900&display=swap');
+
+.titulo {
+    font-family: "Kings", cursive;
+    font-weight: 400;
+    font-size: clamp(3.25rem, 10vw, 6.5rem);
+    line-height: 1;
+    letter-spacing: 0.02em;
+    text-shadow: 0 0 28px rgba(255, 79, 216, 0.4);
+}
+
+.titulo::after {
+    content: "";
+    display: block;
+    height: 12px;
+    margin-top: 16px;
+    background: var(--ns-tabuleiro) 0 0 / 24px 24px;
+    mask-image: linear-gradient(to right, #000 30%, transparent);
+}

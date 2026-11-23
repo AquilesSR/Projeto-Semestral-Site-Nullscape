@@ -114,15 +114,30 @@ main {
     background-blend-mode: multiply;
 }
 
+.titulo {
+    font-family: "Kings", cursive;
+    font-weight: 400;
+    font-size: clamp(3.25rem, 10vw, 6.5rem);
+    line-height: 1;
+    letter-spacing: 0.02em;
+    text-shadow: 0 0 28px rgba(255, 79, 216, 0.4);
+}
 
-
+.titulo::after {
+    content: "";
+    display: block;
+    height: 12px;
+    margin-top: 16px;
+    background: var(--ns-tabuleiro) 0 0 / 24px 24px;
+    mask-image: linear-gradient(to right, #000 30%, transparent);
+}
 /* ==========================================================================
    CONTEÚDO PRINCIPAL (all)
    ========================================================================== */
 .explicacao {
     display: flex;
-    justify-content: center;
-    margin-top: 3%;
+    justify-content: left;
+    flex-direction: row;
 }
 
 .all {
@@ -136,7 +151,6 @@ main {
 .card-text {
     font-size: 25px;
     color: black;
-    text-indent: 1.5em;
     text-align: justify;
 
     font-family: "Smooch Sans", sans-serif;
