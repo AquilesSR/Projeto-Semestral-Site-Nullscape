@@ -4,7 +4,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Kings&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Smooch+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Playwrite+AU+SA+Guides&family=Smooch+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Castoro+Titling&family=Playwrite+AU+SA+Guides&family=Smooch+Sans:wght@100..900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Castoro+Titling&family=Orbitron:wght@400..900&family=Playwrite+AU+SA+Guides&family=Smooch+Sans:wght@100..900&display=swap');
 
+/* ==========================================================================
+   VARIÁVEIS
+   ========================================================================== */
+:root {
+  --roxo: #b455ff; --rosa: #ff4fd8; --ouro: #ffc61c; --azul: #6fd3ff;
+  --fundo: #06030e; --painel: #170c2a; --borda: #3b2166;
+}
 /* ==========================================================================
    BASE
    ========================================================================== */
@@ -21,6 +31,16 @@ body {
 
 a {
     text-decoration: none;
+}
+
+hr {
+  width: 70%;
+  height: 0;
+  border-bottom: 1px solid var(--ouro);
+  text-align: center;
+  display: flex;
+  justify-self: center;
+  margin: 2.5%;
 }
 
 
@@ -71,6 +91,7 @@ nav {
     justify-content: center;
     border-top: solid 1px white;
     background: black;
+    position:static;
 }
 
 nav ul {
@@ -105,15 +126,87 @@ nav li:hover {
 main {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     gap: 10px;
     margin-top: 20px;
     justify-content: center;
+    align-items: center;
 
     background: url("../IMG/HGbpcn8asAA7db7.jpg") repeat center;
-    background-color: rgba(0,0,0,0.90) ;
+    background-color: rgba(0,0,0,0.89) ;
     background-blend-mode: multiply;
 }
 
+.titulo {
+    font-family: "Kings", cursive;
+    font-weight: 400;
+    font-size: clamp(3.25rem, 10vw, 6.5rem);
+    letter-spacing: 0.02em;
+    text-shadow: 0 0 28px rgba(255, 79, 216, 0.4);
+}
+/* ==========================================================================
+   CONTEÚDO PRINCIPAL (all)
+   ========================================================================== */
+.explicacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px;
+    align-items: center;
+}
+
+.all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ==========================================================================
+   Card (main)
+   ========================================================================== */
+
+.card-text {
+    font-size: 25px;
+    color: white;
+    text-align: justify;
+
+    font-family: "BBH Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card-title {
+    font-size: 40px;
+    color: black;
+    font-family: "BBH Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-indent: 1.5em;
+}
+
+.card-img-top {
+    height: 150px;
+    width: 100%;
+    border-radius: 100px 100px 0 0;
+} 
+
+.card-body {
+    width: 100%;
+    display: flex;
+    background: var(--fundo);
+    padding: 5px;
+
+    border-radius: 5px;
+}
+
+.card {
+    border: solid var(--borda) ;
+    border-radius: 100px 100px 0 0;
+}
+
+/* ==========================================================================
+   Titulo (main)
+   ========================================================================== */
 .titulo {
     font-family: "Kings", cursive;
     font-weight: 400;
@@ -132,52 +225,229 @@ main {
     mask-image: linear-gradient(to right, #000 30%, transparent);
 }
 /* ==========================================================================
-   CONTEÚDO PRINCIPAL (all)
+   Inicio (main)
    ========================================================================== */
-.explicacao {
+.inicio {
+    border: solid 1px var(--borda);
+    background: linear-gradient(rgba(6, 3, 14, .55), rgba(6, 3, 14, .92)), url("../IMG/nullscape-video-fundo2.png") center / cover;
+    width: 90%;
     display: flex;
-    justify-content: left;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 10px;
+    transition: ease-in-out 1s;
 }
 
-.all {
-
+.inicio:hover {
+    transition: ease-in-out 1s;
+    transform: scale(1.1);
+    border-color: var(--rosa); 
+    box-shadow: 0 8px 28px rgba(180, 85, 255, .35);
 }
 
-/* ==========================================================================
-   Card (main)
-   ========================================================================== */
-
-.card-text {
-    font-size: 25px;
-    color: black;
-    text-align: justify;
-
-    font-family: "Smooch Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
-
-.card-title {
-    font-size: 40px;
-    color: black;
-    font-family: "BBH Bogle", sans-serif;
+.subtitulo {
+    font-size: 20px;
+    color: white;
+    font-family:  "Kings", cursive;
     font-weight: 400;
     font-style: normal;
     text-indent: 1.5em;
+    text-align: center;
+    letter-spacing: 2.5px;
 }
 
-.card-img-top {
-    height: 150px;
-    width: 100%;
-} 
+/* ==========================================================================
+   Barra Informativa Simples (main)
+   ========================================================================== */
+.barra-info {
+    border-radius: 20px;
 
-.card-body {
-    width: 100%;
+    width: 90%;
     display: flex;
-    background: white;
-    padding: 5px;
+    flex-direction: row;
+    justify-content: space-between;
+    background: url(../IMG/fundo-azul-escuro-info-simples.webp) ;
+    background-color: rgba(0,0,0,0.5) ;
+    background-blend-mode: multiply;
+    margin-left: 2% ;
+}
 
-    border-radius: 5px;
-    border: solid;
+.barra-info-partes {
+    flex-direction: column;
+    margin: 10px;
+}
+
+.numero-barra-info {
+    text-align: center;
+    font-family: "Kings", cursive;
+    font-size: 30px;
+    color: var(--ouro);
+}
+
+.texto-barra-info {
+    font-family: "Kings", cursive;
+    color: var(--ouro);
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+
+/* ==========================================================================
+   Introdução simples do jogo (main)
+   ========================================================================== */
+.intro-nullscape {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.square1 {
+    display: flex;
+    flex-direction: column;
+
+    width: 60%;
+    background: url(../IMG/imagem-horizontal-nullscape.png);
+    background-color: rgba(0,0,0,0.4) ;
+    background-blend-mode: multiply;
+    padding: 10px;
+    border: var(--borda) solid 1px;
+}
+
+.square2 {
+    display: flex;
+    width: 30%;
+    background: url(../IMG/fundo-verde-fosco-intro-simples.webp);
+    background-color: rgba(0,0,0,0.4) ;
+    background-blend-mode: multiply;
+    border: var(--borda) solid 1px;
+    margin-left: 5px;
+}
+
+.square3 {
+    display: flex;
+    width: 90%;
+    background: url(../IMG/outro-fundo.webp);
+    background-color: rgba(0,0,0,0.4) ;
+    background-blend-mode: multiply;
+    border: var(--borda) solid 1px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.square4 {
+    display: flex;
+    width: 30%;
+    background: url(../IMG/fundo-fosco-amarelo.webp);
+    background-color: rgba(0,0,0,0.4) ;
+    background-blend-mode: multiply;
+    border: var(--borda) solid 1px;
+    margin-right: 5px;
+}
+
+.square5 {
+    display: flex;
+    flex-direction: column;
+
+    width: 60%;
+    background: url(../IMG/imagem-horizontal-nullscape.png);
+    background-color: rgba(0,0,0,0.4) ;
+    background-blend-mode: multiply;
+    padding: 10px;
+    border: var(--borda) solid 1px;
+}
+
+.intro-nullscape-titulo {
+    color: #ffffff;
+    text-shadow:
+    0 0 8px   #ffffff,
+    0 0 22px  #ffffff,
+    0 0 44px #e3b900;
+    letter-spacing: 5px;
+    font-family: "Castoro Titling", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.intro-nullscape-texto {
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-shadow:
+    0 0 8px   #ae7d14,
+    0 0 22px  #8c3939,
+    0 0 44px #e3b900;
+    text-indent: 1.5em;
+}
+
+.mart-img {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: block;
+    transition: ease-in-out 1s;
+}
+
+.mart-img:hover {
+    transition: ease-in-out 1s;
+    transform: scale(1.5);
+}
+
+/* ==========================================================================
+   Last Update (main)
+   ========================================================================== */
+.last-update {
+    width: 90%;
+    height: 100vh;
+    border: solid 1px var(--borda);
+    background: url(../IMG/patch5.1-fundo-bonito.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer {
+    background: url("../IMG/footer.webp") repeat center;
+    background-color: rgba(0,0,0,0.80) ;
+    background-blend-mode: multiply;
+    display: flex;
+    color: white;
+    padding: 2.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2.5px;
+    list-style: none;
+}
+
+footer ul {
+    width: 25%;
+    list-style: none;
+}
+
+footer h3 {
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+footer i {
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+footer ul > p {
+    margin-bottom: 40px;
+}
+
+footer li {
+    margin: 10px 0;
+}
+
+footer p {
+    max-width: 200px;
 }
