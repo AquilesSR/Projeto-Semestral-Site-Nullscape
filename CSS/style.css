@@ -165,7 +165,7 @@ main {
    Card (main)
    ========================================================================== */
 
-.card-text {
+/* .card-text {
     font-size: 25px;
     color: white;
     text-align: justify;
@@ -202,7 +202,7 @@ main {
 .card {
     border: solid var(--borda) ;
     border-radius: 100px 100px 0 0;
-}
+} */
 
 /* ==========================================================================
    Titulo (main)
@@ -267,7 +267,7 @@ main {
     width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     background: url(../IMG/fundo-azul-escuro-info-simples.webp) ;
     background-color: rgba(0,0,0,0.5) ;
     background-blend-mode: multiply;
