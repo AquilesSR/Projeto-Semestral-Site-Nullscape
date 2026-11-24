@@ -1,4 +1,37 @@
+/* ==========================================================================
+   FONTES
+   ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Kings&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Smooch+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Playwrite+AU+SA+Guides&family=Smooch+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Castoro+Titling&family=Playwrite+AU+SA+Guides&family=Smooch+Sans:wght@100..900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Castoro+Titling&family=Orbitron:wght@400..900&family=Playwrite+AU+SA+Guides&family=Smooch+Sans:wght@100..900&display=swap');
+
+/* ==========================================================================
+   VARIÁVEIS
+   ========================================================================== */
+:root {
+  --roxo: #b455ff; --rosa: #ff4fd8; --ouro: #ffc61c; --azul: #6fd3ff;
+  --fundo: #06030e; --painel: #170c2a; --borda: #3b2166;
+}
+
+/* ==========================================================================
+   INICIO todos
+   ========================================================================== */
+#inicio-classes {
+    background: linear-gradient(rgba(6, 3, 14, .55), rgba(6, 3, 14, .92)), url("../IMG/classes\ juntas.webp") center / cover;
+}
+#inicio-conquistas {
+    background: linear-gradient(rgba(6, 3, 14, .55), rgba(6, 3, 14, .92)), url("../IMG/NullscapeBackground.jpg") center / cover;
+}
+#inicio-maldicoes {
+    background: linear-gradient(rgba(6, 3, 14, .55), rgba(6, 3, 14, .92)), url("../IMG/fundo-maldicoes.jpg") center / cover;
+}
+#inicio-versoes {
+    background: linear-gradient(rgba(6, 3, 14, .55), rgba(6, 3, 14, .92)), url("../IMG/imagem-nullscaoe-fundo-ramdom.jpg") center / cover;
+}
+#inicio-upgrades {
+    background: linear-gradient(rgba(6, 3, 14, .55), rgba(6, 3, 14, .92)), url("../IMG/fundo-upgrades.jpg") center / cover;
+}
 
