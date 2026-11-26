@@ -237,11 +237,11 @@ main {
     flex-direction: column;
     border-radius: 10px;
     margin: 10px;
-    transition: ease-in-out 1s;
+    transition: ease-in-out 0.4s;
 }
 
 .inicio:hover {
-    transition: ease-in-out 1s;
+    transition: ease-in-out 0.4s;
     transform: scale(1.1);
     border-color: var(--rosa); 
     box-shadow: 0 8px 28px rgba(180, 85, 255, .35);
@@ -259,6 +259,24 @@ main {
 }
 
 /* ==========================================================================
+   INICIO -- TODOS OS HTML
+   ========================================================================== */
+#inicio-classes {
+    background: linear-gradient(rgba(6, 3, 14, .55), rgba(6, 3, 14, .92)), url("../IMG/classes\ juntas.webp") center / cover;
+}
+#inicio-conquistas {
+    background: linear-gradient(rgba(6, 3, 14, .55), rgba(6, 3, 14, .92)), url("../IMG/NullscapeBackground.jpg") center / cover;
+}
+#inicio-maldicoes {
+    background: linear-gradient(rgba(6, 3, 14, .55), rgba(6, 3, 14, .92)), url("../IMG/fundo-maldicoes.jpg") center / cover;
+}
+#inicio-versoes {
+    background: linear-gradient(rgba(6, 3, 14, .55), rgba(6, 3, 14, .92)), url("../IMG/imagem-nullscaoe-fundo-ramdom.jpg") center / cover;
+}
+#inicio-upgrades {
+    background: linear-gradient(rgba(6, 3, 14, .55), rgba(6, 3, 14, .92)), url("../IMG/fundo-upgrades.jpg") center / cover;
+}
+/* ==========================================================================
    Barra Informativa Simples (main)
    ========================================================================== */
 .barra-info {
@@ -272,6 +290,14 @@ main {
     background-color: rgba(0,0,0,0.5) ;
     background-blend-mode: multiply;
     margin-left: 2% ;
+    transition: ease-in-out 0.4s;
+}
+
+.barra-info:hover {
+    transition: ease-in-out 0.4s;
+    transform: scale(1.1);
+    border-color: var(--rosa); 
+    box-shadow: 0 8px 28px rgba(180, 85, 255, .35);
 }
 
 .barra-info-partes {
@@ -305,11 +331,12 @@ main {
 .square1 {
     display: flex;
     flex-direction: column;
-
+    
     width: 60%;
     background: url(../IMG/imagem-horizontal-nullscape.png);
     background-color: rgba(0,0,0,0.4) ;
     background-blend-mode: multiply;
+    background-size: cover;
     padding: 10px;
     border: var(--borda) solid 1px;
 }
@@ -320,6 +347,7 @@ main {
     background: url(../IMG/fundo-verde-fosco-intro-simples.webp);
     background-color: rgba(0,0,0,0.4) ;
     background-blend-mode: multiply;
+    background-size: cover;
     border: var(--borda) solid 1px;
     margin-left: 5px;
 }
@@ -330,6 +358,7 @@ main {
     background: url(../IMG/outro-fundo.webp);
     background-color: rgba(0,0,0,0.4) ;
     background-blend-mode: multiply;
+    background-size: cover;
     border: var(--borda) solid 1px;
     margin: 5px;
     padding: 10px;
@@ -341,6 +370,7 @@ main {
     background: url(../IMG/fundo-fosco-amarelo.webp);
     background-color: rgba(0,0,0,0.4) ;
     background-blend-mode: multiply;
+    background-size: cover;
     border: var(--borda) solid 1px;
     margin-right: 5px;
 }
@@ -350,10 +380,12 @@ main {
     flex-direction: column;
 
     width: 60%;
-    background: url(../IMG/imagem-horizontal-nullscape.png);
+    background: url(../IMG/fundo-upgrades.jpg);
+
     background-color: rgba(0,0,0,0.4) ;
     background-blend-mode: multiply;
     padding: 10px;
+    background-size: cover;
     border: var(--borda) solid 1px;
 }
 
@@ -408,8 +440,64 @@ main {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center ;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
+.last-update-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+    margin: -20px;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(transparent, rgba(6, 3, 14, .92));
+}
+
+/* ==========================================================================
+    Menu de baixo (main)
+   ========================================================================== */
+.menu-especifico {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 200px;
+    padding: 20px;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    transition: 0.4s ease-in-out;
+}
+
+.menu-item:hover {
+    transform: scale(1.04);
+    border-color: var(--rosa);
+    box-shadow: 0 8px 28px rgba(180, 85, 255, .35);
+}
+
+.menu-item h3 {
+    font-family: "Kings", cursive;
+    font-size: 30px;
+    color: var(--ouro);
+}
+
+.menu-item p {
+    font-family: "Orbitron", sans-serif;
+    font-size: 14px;
+}
 /* ==========================================================================
    Footer
    ========================================================================== */
@@ -420,7 +508,7 @@ footer {
     display: flex;
     color: white;
     padding: 2.5%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Orbitron", sans-serif;
     letter-spacing: 2.5px;
     list-style: none;
 }
@@ -481,7 +569,6 @@ footer p {
     animation: subir 5s linear infinite;
 }
 
-/* posições diferentes */
 .quadradinhos span:nth-child(1) {
     left: 5%;
     animation-delay: 0s;
@@ -544,4 +631,170 @@ footer p {
         transform: translateY(-300px) rotate(180deg);
         opacity: 0;
     }
+}
+
+/* ==========================================================================
+GERAL -- GERAL -- GERAL -- GERAL -- GERAL -- GERAL -- GERAL -- GERAL --
+========================================================================== */
+/* ==========================================================================
+GERAL -- GERAL -- GERAL -- GERAL -- GERAL -- GERAL -- GERAL -- GERAL --
+========================================================================== */
+
+/* ==========================================================================
+   Botão
+   ========================================================================== */
+.botao-ns {
+    border: 1px solid var(--ouro);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: var(--ouro);
+    font-family: "Kings", cursive;
+    letter-spacing: 3px;
+    transition: 0.3s ease-in-out;
+}
+
+.botao-ns:hover {
+    background: var(--ouro);
+    color: black;
+}
+
+/* ==========================================================================
+   VERSOES -- VERSOES -- VERSOES -- VERSOES -- VERSOES -- VERSOES --
+   ========================================================================== */
+   /* ==========================================================================
+   VERSOES -- VERSOES -- VERSOES -- VERSOES -- VERSOES -- VERSOES --
+   ========================================================================== */
+
+/* ==========================================================================
+Patch versões
+========================================================================== */
+.patchs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 2%;
+}
+
+.patch {
+    margin: 0.5%;
+    border-radius: 20px;
+    background: url(../IMG/card-versao-fundo.png);
+    background-color: rgba(6, 3, 14, .30);
+    border-radius: 0;
+    width: 90%;
+}
+
+.patch-titulo {
+    text-align: center;
+}
+
+.patch0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.patch1 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.patch2 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.patch3 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.patch301 {
+    width: 48%;
+    background: center;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+}
+
+.patch31 {
+    width: 90%;
+    background: center;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+}
+
+.patch401 {
+    background: center;
+}
+
+.img-patch {
+    width: 28.5%;
+    margin: 1%;
+    border-radius: 20px;
+    border-radius: 0;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.img-patch-2 {
+    width: 48%;
+    background: center;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+}
+
+.img-patch-3 {
+    width: 40%;
+    background: center;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+}
+
+.patch-texto {
+    text-align: center;
+}
+
+.barra-info-versao {
+    background-color: rgba(6, 3, 14, .7);
+    background-blend-mode: multiply;
+    scale: 1.1;
+}
+
+/* ==========================================================================
+   Intro versões
+   ========================================================================== */
+.barra-info-versao {
+    justify-content: center;
+    background: url(../IMG/fundo\ alpha.jpg);
+    padding: 20px;
+    border: var(--borda) solid 0.5px;
+    background: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.5) ;
+    background-blend-mode: multiply;
+}
+
+.barra-info-partes-versao {
+    margin: 0;
+}
+
+.numero-barra-info-versao {
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 70px;
+}
+
+.texto-barra-info-versao {
+    text-align: center;
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
 }
