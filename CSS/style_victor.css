@@ -29,7 +29,7 @@
 {
     border: solid 3px black;
     border-radius: 10px;
-    margin: 10px;
+    margin: 15px;
     background-color: transparent;
 }
 
@@ -61,9 +61,37 @@
     background-color: var(--fundo);
 }
 
-.accordion-item
+.accordion-body
 {
     background-color: var(--fundo);
     font-weight: 200;
-    color: rgb(230, 210, 210);
+    color: rgb(202, 202, 202);
+}
+
+.card, .card-img, .card-title,
+.card-text, .accordion
+{
+    transition: 0.4s ease;
+}
+
+.card:hover, .card-img:hover
+{
+    transform: scale(1.1);
+}
+
+.card-title:hover, .card-text:hover, .accordion:hover
+{
+    transform: scale(1.05);
+}
+
+.card-title, .card-text
+{
+    background-color: #b455ff50;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.accordion-header, .accordion-body
+{
+    padding: 10px;
 }
