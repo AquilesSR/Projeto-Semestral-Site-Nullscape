@@ -30,16 +30,17 @@
     border: solid 3px black;
     border-radius: 10px;
     margin: 10px;
+    background-color: transparent;
 }
 
 .card-img-top
 {
-    background-color: #ff4fd890;
+    background-color: #ff4fd880;
 }
 
 .card-body
 {
-    background-color: #b455ff90;
+    background-color: #b455ff80;
 
     padding: 10px;
 }
@@ -57,4 +58,12 @@
 .accordion-header
 {
     font-size: 30px;
+    background-color: var(--fundo);
+}
+
+.accordion-item
+{
+    background-color: var(--fundo);
+    font-weight: 200;
+    color: rgb(230, 210, 210);
 }
